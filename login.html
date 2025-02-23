@@ -27,7 +27,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top bg-white">
       <div class="container-fluid ms-5">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="Assets/Logo.png" alt="+Paths" width="114.46" height="24" />
         </a>
         <button
@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav p-4" style="line-height: 24px; font-size: 14px">
             <li class="nav-item">
-              <a class="nav-link active" style="font-weight: 700" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" style="font-weight: 700" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" style="font-weight: 700" aria-current="page" href="#como-usarlo">
@@ -94,19 +94,26 @@
           </div>
         </form>
       </section>
-      <section class="w-100 text-white" style="background-color: #123333; min-height: 90vh">
+      <section
+        class="w-100 text-white position-relative"
+        style="background-color: #123333; height: 91.8vh; overflow: hidden"
+      >
         <div class="container" style="padding: 80px; padding-bottom: 0px">
-          <h1 class="pb-3" style="font-size: 30px; font-weight: 600">
-            +Paths ha simplificado la planificación de mis rutas. Ahora las hago en 5 minutos ¡Me encanta!
-          </h1>
-          <div class="d-flex justify-content-between">
-            <text>
-              <h5 style="font-size: 18px; font-weight: 600">— Juan Pérez</h5>
-              <h5 style="font-size: 16px; font-weight: 400">Chofer independiente</h5>
-            </text>
-            <h5>5 estrellas</h5>
+          <div>
+            <h1 class="pb-3" style="font-size: 30px; font-weight: 600">
+              +Paths ha simplificado la planificación de mis rutas. Ahora las hago en 5 minutos ¡Me encanta!
+            </h1>
+            <div class="d-flex justify-content-between">
+              <div>
+                <h5 style="font-size: 18px; font-weight: 600">— Juan Pérez</h5>
+                <h5 style="font-size: 16px; font-weight: 400">Chofer independiente</h5>
+              </div>
+              <h5>5 estrellas</h5>
+            </div>
           </div>
-          <img src="Assets/Screen mockup (REPLACE FILL).png" style="width: 80%" alt="Imágen" />
+        </div>
+        <div class="position-absolute" style="bottom: 0; right: 0; width: 70%; max-width: 2000px">
+          <img src="Assets/Screen mockup (REPLACE FILL).png" class="w-100" alt="Imágen" />
         </div>
       </section>
     </div>
