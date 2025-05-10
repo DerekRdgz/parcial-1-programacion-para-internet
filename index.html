@@ -26,45 +26,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-white">
-      <div class="container-fluid ms-5">
-        <a class="navbar-brand" href="#">
-          <img src="Assets/Logo.png" alt="+Paths" width="114.46" height="24" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav p-4" style="line-height: 24px; font-size: 14px">
-            <li class="nav-item">
-              <a class="nav-link active" style="font-weight: 700" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" style="font-weight: 700" aria-current="page" href="#como-usarlo">
-                Cómo usarlo
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" style="font-weight: 700" aria-current="page" href="login.html">Beneficios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" style="font-weight: 700" aria-current="page" href="login.html">Precio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" style="font-weight: 700" aria-current="page" href="login.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar" class="sticky-top"></div>
     <!-- Header -->
     <header>
       <div
@@ -144,7 +106,7 @@
       <div class="container">
         <hr class="text-white opacity-100 mx-auto" />
         <div class="d-flex py-4 justify-content-between">
-          <div class="text-white" style="font-weight: 500">© 2024 +Paths. Todos los derechos reservados.</div>
+          <div class="text-white" style="font-weight: 500">© 2025 +Paths. Todos los derechos reservados.</div>
           <div class="d-flex" style="gap: 16px; font-weight: 500">
             <div class="text-white">Términos y condiciones</div>
             <div class="text-white">Política de privacidad</div>
@@ -153,5 +115,7 @@
         </div>
       </div>
     </footer>
+    <!-- Script para Iniciar/Cerrar Sesión -->
+    <script src="components/nav.js" type="module"></script>
   </body>
 </html>
