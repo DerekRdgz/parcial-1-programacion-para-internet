@@ -1,10 +1,8 @@
 (async () => {
-  // 1. Cargar el fragmento y meterlo en el contenedor #navbar
   const resp = await fetch("components/navbar.html");
   const html = await resp.text();
   document.getElementById("navbar").innerHTML = html;
 
-  // 2. Lógica de sesión (se ejecuta DESPUÉS de que la barra ya existe)
   const sessionLi = document.getElementById("sessionArea");
   const token = localStorage.getItem("token");
   const nameLS = localStorage.getItem("name");

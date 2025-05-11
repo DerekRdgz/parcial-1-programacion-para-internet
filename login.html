@@ -90,7 +90,7 @@
     <!--- Script de diseño de Iniciar/Cerrar Sesión -->
     <script src="components/nav.js" type="module"></script>
     <script>
-      const LOGIN_URL = "https://parcial2-prog-internet.onrender.com/api/users/login"; // mismo puerto que back-end
+      const LOGIN_URL = "https://parcial2-prog-internet.onrender.com/api/users/login";
 
       document.getElementById("loginForm").addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -106,7 +106,7 @@
           });
 
           if (res.ok) {
-            const data = await res.json(); // ← el token viene aquí :contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}
+            const data = await res.json();
             localStorage.setItem("token", data.token);
             localStorage.setItem("name", data.name);
 

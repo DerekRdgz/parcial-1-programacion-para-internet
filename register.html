@@ -84,7 +84,7 @@
         <div id="okBox" class="alert alert-success d-none mt-3" role="alert">¡Registro exitoso! Redireccionando…</div>
       </form>
 
-      <!-- Lugar para mostrar errores -->
+      <!-- mostrar errores -->
       <div id="errorBox" class="alert alert-danger mt-3 d-none" role="alert"></div>
     </section>
 
@@ -106,13 +106,11 @@
           });
 
           if (res.ok) {
-            // ✔️  Registro exitoso → redirige al login
             document.getElementById("okBox").classList.remove("d-none");
             setTimeout(() => {
               window.location.href = "login.html";
             }, 2000);
           } else {
-            // ❌  Muestra el mensaje que envía el back-end
             const data = await res.json();
             showError(data.mensaje || "Error al crear la cuenta");
           }
