@@ -21,7 +21,7 @@
     };
   } else {
     sessionLi.innerHTML = `
-        <a class="btn btn-sm text-whit" href="login.html" style="background-color: #123333">Inicia sesión</a>
+        <a class="btn btn-sm text-white" href="login.html" style="background-color: #123333">Inicia sesión</a>
       `;
   }
 })();
